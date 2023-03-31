@@ -1,8 +1,10 @@
-var http = require('http');
-//create a server object:
-http.createServer(function (req, res) {
-  res.write('Hello World!'); //write a response
-  res.end(); //end the response
-}).listen(8000, function(){
- console.log("server start at port 3000"); //the server object listens on port 3000
-});
+
+const app = require("express")()
+
+const PORT = 3000
+
+app.get('/', (req, res)=>{
+    res.send(`<h1>Welcome ${process.env.ice} </h1>`)
+})
+
+app.listen(PORT, ()=> console.log(`The app is running on port : ${PORT}`))
