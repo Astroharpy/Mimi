@@ -1,5 +1,6 @@
 {
     "scripts": {
+        "build": "npm install",
         "dev": "node app.js"
     },
     "dependencies": {
