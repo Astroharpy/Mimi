@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "build": "npm init -y",
-        "dev": "nodemon app.js"
+        "build": "npm i -y",
+        "dev": "node app.js"
     },
     "dependencies": {
         "bcrypt": "^5.1.0",
