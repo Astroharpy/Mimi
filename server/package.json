@@ -1,6 +1,5 @@
 {
     "scripts": {
-        "build": "npm i -y",
         "dev": "node app.js"
     },
     "dependencies": {
